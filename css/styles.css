@@ -1,0 +1,420 @@
+:root {
+  --green-primary: #022E30;
+  --green-secondary: #003F3F;
+  --yellow-primary: #F7A534;
+  --white-primary: #FFFFFF;
+  --font-primary: "Montserrat", sans-serif;
+  --Font-Size-XXXXS: 10px;
+  --Font-Size-XXXS: 12px;
+  --Font-Size-XXS: 14px;
+  --Font-Size-XS: 16px;
+  --Font-Size-SM: 20px;
+  --Font-Size-MD: 24px;
+  --Font-Size-LG: 32px;
+  --Font-Size-XL: 40px;
+  --Font-Size-XXL: 48px;
+  --Font-Size-XXXL: 64PX;
+  --padding: 0px 2.8125rem;
+  --padding-mobile: 0px 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+.logo-section {
+  display: flex;
+  width: 100%;
+  height: 10.625rem;
+  background-color: var(--white-primary);
+  padding: var(--padding);
+}
+.logo-section .logo {
+  width: 15rem;
+  height: auto;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 7.8125rem;
+  background-color: var(--yellow-primary);
+  padding: var(--padding);
+}
+.menu-container .menu-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-container .menu-content .left-content .left-button {
+  display: flex;
+  align-items: center;
+  border: 0.0938rem solid var(--green-primary);
+  border-radius: 3.125rem;
+  height: 2.8125rem;
+  float: left;
+}
+.menu-container .menu-content .left-content .left-button .left-button-text {
+  color: var(--green-primary);
+  font-size: var(--Font-Size-SM);
+  font-weight: bold;
+  padding: 0rem 1.5625rem;
+  text-transform: uppercase;
+}
+.menu-container .menu-content .right-content {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.menu-container .menu-content .right-content .right-text {
+  color: var(--green-primary);
+  font-size: var(--Font-Size-SM);
+  font-weight: bold;
+  margin-right: 1.5625rem;
+}
+.menu-container .menu-content .right-content .right-social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+}
+.menu-container .menu-content .right-content .right-social li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1.5px solid var(--green-primary);
+  transition: all 0.2s ease;
+}
+.menu-container .menu-content .right-content .right-social li a {
+  color: var(--green-primary);
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding: 0.9375rem;
+  transition: all 0.2s ease;
+}
+.menu-container .menu-content .right-content .right-social li a i {
+  font-size: var(--Font-Size-SM);
+}
+.menu-container .menu-content .right-content .right-social li a:hover {
+  color: var(--yellow-primary);
+}
+.menu-container .menu-content .right-content .right-social li:hover {
+  background-color: var(--green-primary);
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/dasktop-banner.svg");
+  width: 100%;
+  height: 50.0625rem;
+}
+.banner-container .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 37.5rem;
+  align-items: center;
+}
+.banner-container .banner-content .banner-text {
+  height: auto;
+}
+.banner-container .banner-content .banner-description {
+  color: var(--white-primary);
+  font-size: var(--Font-Size-LG);
+}
+.banner-container .banner-content .banner-button {
+  display: flex;
+  align-items: center;
+  border: 0.0938rem solid var(--yellow-primary);
+  transition: all 0.2s ease;
+  width: auto;
+  height: 4.625rem;
+}
+.banner-container .banner-content .banner-button .banner-button-text {
+  font-size: var(--Font-Size-SM);
+  font-weight: bold;
+  color: var(--yellow-primary);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 1.5625rem 3.125rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 5.625rem 2.8125rem;
+}
+.cards-container .header-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container .header-cards-container .title-cards-container {
+  font-size: var(--Font-Size-XL);
+  font-weight: bold;
+  color: var(--green-primary);
+}
+.cards-container .header-cards-container .title-underline {
+  margin-top: 1.875rem;
+  height: 0.1563rem;
+  width: 20%;
+  background-color: var(--yellow-primary);
+}
+.cards-container .header-cards-container .text-cards-container {
+  color: var(--green-secondary);
+  font-size: var(--Font-Size-XS);
+  text-align: center;
+  width: 60%;
+  margin-top: 3.75rem;
+}
+.cards-container .cards-content {
+  display: flex;
+  background-image: url(/images/cards.svg);
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 100%;
+  margin: 5rem 0rem;
+}
+.cards-container .youtube-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 3.4375rem;
+  border: 0.0625rem solid var(--green-primary);
+  border-radius: 1.875rem;
+}
+.cards-container .youtube-button a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: var(--Font-Size-SM);
+  font-weight: bold;
+  color: var(--green-primary);
+  padding: 1.875rem;
+}
+.cards-container .youtube-button a i {
+  font-size: var(--Font-Size-MD);
+  margin-right: 0.625rem;
+}
+
+.range-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8.75rem;
+  background-color: var(--yellow-primary);
+}
+.range-container .range-button {
+  display: flex;
+  align-items: center;
+  border: 0.0938rem solid var(--white-primary);
+  transition: all 0.2s ease;
+  height: 4.625rem;
+}
+.range-container .range-button .range-button-text {
+  font-size: var(--Font-Size-XL);
+  font-weight: bold;
+  color: var(--white-primary);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 25px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 7.8125rem;
+  background-color: var(--green-primary);
+}
+.footer-container .footer-text {
+  color: var(--yellow-primary);
+  font-size: var(--Font-Size-XS);
+  padding: 0rem 1.5625rem;
+}
+.footer-container .footer-text a {
+  text-decoration: none;
+  color: var(--yellow-primary);
+}
+
+@media (max-width: 768px) {
+  .logo-section {
+    height: 100px;
+    padding: var(--padding-mobile);
+  }
+  .logo-section .logo {
+    width: 8.125rem;
+    height: auto;
+  }
+  .menu-container {
+    height: 5rem;
+    padding: var(--padding-mobile);
+  }
+  .menu-container .menu-content .left-content {
+    display: none;
+  }
+  .menu-container .menu-content .right-content {
+    justify-content: space-between;
+    float: right;
+    width: 100%;
+  }
+  .menu-container .menu-content .right-content .right-text {
+    float: left;
+    font-size: var(--Font-Size-XS);
+  }
+  .menu-container .menu-content .right-content .right-social {
+    float: right;
+    gap: 1.5625rem;
+  }
+  .menu-container .menu-content .right-content .right-social li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .banner-container {
+    background-image: url("/images/mobile-banner.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24.375rem;
+  }
+  .banner-container .banner-content {
+    justify-content: space-between;
+    height: auto;
+    gap: 1.5625rem;
+  }
+  .banner-container .banner-content .banner-text {
+    height: auto;
+    width: 11.25rem;
+  }
+  .banner-container .banner-content .banner-description {
+    font-size: var(--Font-Size-XS);
+    text-align: center;
+    width: 50%;
+  }
+  .banner-container .banner-content .banner-button {
+    width: 11.25rem;
+    height: auto;
+  }
+  .banner-container .banner-content .banner-button .banner-button-text {
+    font-size: var(--Font-Size-XXS);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.625rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0rem;
+  }
+  .cards-container .header-cards-container {
+    padding: var(--padding-mobile);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-container .header-cards-container .title-cards-container {
+    font-size: var(--Font-Size-XS);
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+    color: var(--green-primary);
+  }
+  .cards-container .header-cards-container .title-underline {
+    margin-top: 1.5625rem;
+    height: 0.1563rem;
+    width: 30%;
+    background-color: var(--yellow-primary);
+  }
+  .cards-container .header-cards-container .text-cards-container {
+    color: var(--green-secondary);
+    font-size: var(--Font-Size-XS);
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5625rem;
+  }
+  .cards-container .cards-content {
+    display: flex;
+    background-image: url(/images/cards-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 580px;
+    width: 100%;
+    margin: 0.9375rem 0rem;
+  }
+  .cards-container .youtube-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 37px;
+    border: 0.0625rem solid var(--green-primary);
+    border-radius: 30px;
+  }
+  .cards-container .youtube-button a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: var(--Font-Size-XS);
+    font-weight: bold;
+    color: var(--green-primary);
+    padding: 0.625rem 1.25rem;
+  }
+  .cards-container .youtube-button a i {
+    font-size: var(--Font-Size-MD);
+    margin-right: 10px;
+  }
+  .range-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--yellow-primary);
+  }
+  .range-container .range-button {
+    display: flex;
+    align-items: center;
+    border: 0.0938rem solid var(--white-primary);
+    transition: all 0.2s ease;
+    height: 50px;
+  }
+  .range-container .range-button .range-button-text {
+    font-size: var(--Font-Size-XS);
+    font-weight: bold;
+    color: var(--white-primary);
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 15px 80px;
+  }
+}/*# sourceMappingURL=styles.css.map */
