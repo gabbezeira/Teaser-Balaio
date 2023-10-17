@@ -135,6 +135,9 @@ html {
   color: var(--white-primary);
   font-size: var(--Font-Size-LG);
 }
+.banner-container .banner-content .banner-description br {
+  display: none;
+}
 .banner-container .banner-content .banner-button {
   display: flex;
   align-items: center;
@@ -252,6 +255,7 @@ html {
   background-color: var(--green-primary);
 }
 .footer-container .footer-text {
+  text-align: center;
   color: var(--yellow-primary);
   font-size: var(--Font-Size-XS);
   padding: 0rem 1.5625rem;
@@ -312,7 +316,11 @@ html {
   .banner-container .banner-content .banner-description {
     font-size: var(--Font-Size-XS);
     text-align: center;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .banner-container .banner-content .banner-description br {
+    display: block;
   }
   .banner-container .banner-content .banner-button {
     width: 11.25rem;

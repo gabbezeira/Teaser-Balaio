@@ -159,6 +159,10 @@ html {
         .banner-description {
             color: var(--white-primary);
             font-size: var(--Font-Size-LG);
+
+            br {
+                display: none;
+            }
         }
 
         .banner-button {
@@ -294,6 +298,7 @@ html {
     background-color: var(--green-primary);
 
     .footer-text {
+        text-align: center;
         color: var(--yellow-primary);
         font-size: var(--Font-Size-XS);
         padding: 0rem 1.5625rem;
@@ -368,7 +373,12 @@ html {
             .banner-description {
                 font-size: var(--Font-Size-XS);
                 text-align: center;
-                width: 50%;
+                flex-wrap: wrap;
+                width: 100%;
+
+                br {
+                    display: block;
+                }
 
             }
     
